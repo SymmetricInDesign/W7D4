@@ -24,8 +24,13 @@
 		color: $dark-gray;
 	}
 
+	li:first-of-type {
+		font-weight: bold;
+	}
+
 	ul {
 		display: flex;
+		flex-direction: row;
 	}
 }
 
@@ -46,6 +51,10 @@
 		border-right: 1px solid $light-gray;
 	}
 
+	li:last-of-type {
+		border-right: 0
+	}
+
 	button {
 		background: none;
 		padding: 0px;
@@ -55,7 +64,7 @@
 	}
 
 	button:hover {
-		background-color: $lightest-gray;
+		background-color: $lighter-gray;
 	}
 
 	a,

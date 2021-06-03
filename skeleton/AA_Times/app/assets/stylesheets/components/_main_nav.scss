@@ -1,17 +1,26 @@
 .main-nav {
-
+  display:flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid $light-gray
 }
 
 .left-nav > ul,
 .right-nav > ul {
-
+  display: flex;
+  align-items: center;
 }
 
 .left-nav {
 
   > ul {
     > li {
-
+      padding: 10px 10px;
+      font-size: 11px;
+      font-family: $sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 0 10px
     }
   }
 
@@ -24,11 +33,13 @@
 
   > ul {
 
-    > li {
-  
+    > li > button {
+      padding: 6px
     }
 
     > li:last-of-type {
+      padding: 5px;
+      font-size: 13px;
   
     }
   }
@@ -40,5 +51,5 @@
 
 .left-nav > ul > li:hover,
 .right-nav > ul > li:last-of-type:hover {
-
+  background-color: $lightest-gray;
 }
